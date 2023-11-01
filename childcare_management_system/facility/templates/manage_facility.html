@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>{% if facility_id %}Edit{% else %}Add{% endif %} Facility</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Save Facility</button>
+    </form>
+</div>
+{% endblock %}

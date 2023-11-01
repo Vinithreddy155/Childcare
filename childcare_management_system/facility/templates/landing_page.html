@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Childcare Management System</h1>
+    <p class="lead">Your one-stop solution for managing childcare facilities effectively and efficiently.</p>
+    <hr class="my-4">
+    <p>Optimized for administrators, staff, and parents.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'custom_login' %}" role="button">Login</a>
+    <a class="btn btn-secondary btn-lg" href="#" role="button">Learn More</a>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">For Administrators</h5>
+                    <p class="card-text">Manage facilities, staff, and more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">For Teachers</h5>
+                    <p class="card-text">Check attendance, view schedules, and more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">For Parents</h5>
+                    <p class="card-text">Monitor your child's progress, make payments, and more.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
